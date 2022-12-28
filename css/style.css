@@ -35,6 +35,8 @@ a > span{
 }
 
 .address{
+    font-family: 'Roboto';
+font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
@@ -45,6 +47,19 @@ color: #434455;
     color: #4D5AE5;
 }
 
+.btn-items{
+    font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+color: #4D5AE5;
+    background: #F4F4FD;
+border: 1px solid #E7E9FC;
+border-radius: 4px;
+}
 /* section1 */
 .hero{
     background: #2E2F42;
@@ -78,14 +93,26 @@ cursor:pointer;
 }
 
 /* section2 */
-.feature{
+.visually-hidden{
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+.subject{
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 
 }
-.feature-text{
+.subject-text{
     font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
@@ -94,7 +121,7 @@ color: #434455;
 }
 
 /* section3 */
-.subject{
+.title{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -114,23 +141,6 @@ color: #434455;
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 border-radius: 0px 0px 4px 4px;
 }
-.team-name{
-    font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-
-letter-spacing: 0.02em;
-
-}
-.team-work{
-    font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-
-letter-spacing: 0.02em;
-color: #434455;
-}
-
 /* footer */
 .footer{
     background: #2E2F42;
