@@ -1,7 +1,13 @@
+
+:root{
+    --main-text-color: #2E2F42; ;
+}
+
+
 /* body */
 body{
     font-family: 'Roboto', sans-serif;
-    color: #2E2F42;
+    color: var(--main-text-color);
 }
 
 .list{
