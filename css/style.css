@@ -1,6 +1,8 @@
 
 :root{
-    --main-text-color: #2E2F42; ;
+    --main-text-color: #2E2F42; 
+    --secondery-text-color: #434455;
+    --bcg-color: #404BBF ;
 }
 
 
@@ -15,14 +17,14 @@ body{
 }
 /* header */
 .nav-list{
-font-weight: 600;
+font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #2E2F42;
 }
 .nav-list:hover, .nav-list:focus{
-    color: #4D5AE5;
+    color: #404BBF;
 }
 .nav-logo{
     font-family: 'Raleway';
@@ -50,7 +52,7 @@ letter-spacing: 0.02em;
 color: #434455;
 }
 .address-mail:hover, .address-mail:focus{
-    color: #4D5AE5;
+    color: #404BBF;
 }
 
 .btn-items{
@@ -116,6 +118,7 @@ font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
+color: #2E2F42;
 
 }
 .subject-text{
@@ -134,7 +137,8 @@ color: #434455;
     
     letter-spacing: 0.02em;
     text-transform: capitalize;
-        
+    color: #2E2F42;
+    
 }
 
 /* section4 */
