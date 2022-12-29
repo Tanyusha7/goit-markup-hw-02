@@ -1,33 +1,74 @@
 
 :root{
-    --main-text-color: #2E2F42; 
-    --secondery-text-color: #434455;
-    --bcg-color: #404BBF ;
+    --main-title-color: #2E2F42; 
+    --second-title-color: #FFFFFF;
+    --main-text-color: #434455;
+    --second-text-color: #E7E9FC;
+    --main-btn-color:  #4D5AE5;
+    --second-btn-color:  #FFFFFF;
+    --accent-color:  #404BBF;
 }
 
 
 /* body */
 body{
     font-family: 'Roboto', sans-serif;
-    color: var(--main-text-color);
 }
 
 .list{
     list-style: none;
 }
+.link{
+    text-decoration: none;
+}
+.title{
+    font-size: 36px;
+    line-height: 1.11;
+    
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--main-title-color);
+}
+.subtitle{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--main-title-color);    
+}
+.text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+.visually-hidden{
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
 /* header */
-.nav-list{
+.header-item{
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #2E2F42;
 }
-.nav-list:hover, .nav-list:focus{
-    color: #404BBF;
+.header-item:hover, .header-item:focus{
+    color: var(--accent-color);
 }
-.nav-logo{
-    font-family: 'Raleway';
+.header-logo{
+    font-family: 'Raleway' sans-serif;
 font-style: normal;
 font-weight: 800;
 font-size: 18px;
@@ -38,12 +79,12 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #2E2F42;
 }
-a > span{
+.header-logo span{
     color: #4D5AE5;
 }
 
-.address{
-    font-family: 'Roboto';
+.link-address{
+    font-family: inherit;
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
@@ -51,19 +92,20 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
 }
-.address-mail:hover, .address-mail:focus{
-    color: #404BBF;
+.link-mail:hover, .link-mail:focus{
+    color: var(--accent-color);
 }
 
 .btn-items{
-    font-weight: 500;
+font-family: inherit;
+ font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 display: flex;
 align-items: center;
 text-align: center;
 letter-spacing: 0.04em;
-color: #4D5AE5;
+color: var(--main-btn-color);
     background: #F4F4FD;
 border: 1px solid #E7E9FC;
 border-radius: 4px;
@@ -73,21 +115,21 @@ border-radius: 4px;
     background: #2E2F42;
 }
 .hero-title{
-font-weight: 700;
 font-size: 56px;
 line-height: 1.07;
 
 letter-spacing: 0.02em;
-color: #FFFFFF;
+color: var(--second-title-color);
 }
 .hero-btn{
+    font-family: inherit;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 display: flex;
 align-items: center;
 letter-spacing: 0.04em;
-color: #FFFFFF;
+color: var(--second-btn-color);
 background: #4D5AE5;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
@@ -101,45 +143,8 @@ cursor:pointer;
 }
 
 /* section2 */
-.visually-hidden{
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-}
-.subject{
-font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-letter-spacing: 0.02em;
-color: #2E2F42;
-
-}
-.subject-text{
-    font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: #434455;
-}
 
 /* section3 */
-.title{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2E2F42;
-    
-}
 
 /* section4 */
 .team{
@@ -156,7 +161,7 @@ border-radius: 0px 0px 4px 4px;
     background: #2E2F42;
 }
 .footer-logo{
-    font-family: 'Raleway';
+    font-family: 'Raleway' sans-serif;
 font-style: normal;
 font-weight: 800;
 font-size: 18px;
@@ -167,7 +172,7 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #F4F4FD;
 }
-a > span{
+.footer-logo span{
     color: #4D5AE5;
 }
 .footer-text{
