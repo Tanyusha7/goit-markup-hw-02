@@ -7,6 +7,8 @@
     --main-btn-color:  #4D5AE5;
     --second-btn-color:  #FFFFFF;
     --accent-color:  #404BBF;
+    --main-bcg-color: #F4F4FD;
+    --second-bcg-color: #2E2F42;
 }
 
 
@@ -106,13 +108,13 @@ align-items: center;
 text-align: center;
 letter-spacing: 0.04em;
 color: var(--main-btn-color);
-    background: #F4F4FD;
+    background: var(--main-bcg-color);
 border: 1px solid #E7E9FC;
 border-radius: 4px;
 }
 /* section1 */
 .hero{
-    background: #2E2F42;
+    background: var(--second-bcg-color);
 }
 .hero-title{
 font-size: 56px;
@@ -148,7 +150,7 @@ cursor:pointer;
 
 /* section4 */
 .team{
-    background: #F4F4FD;
+    background: var(--main-bcg-color);
 }
 
 .team-card{
@@ -158,7 +160,7 @@ border-radius: 0px 0px 4px 4px;
 }
 /* footer */
 .footer{
-    background: #2E2F42;
+    background: var(--second-bcg-color);
 }
 .footer-logo{
     font-family: 'Raleway', sans-serif;
