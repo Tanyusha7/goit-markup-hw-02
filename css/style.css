@@ -6,7 +6,7 @@
     --second-text-color: #E7E9FC;
     --main-btn-color:  #4D5AE5;
     --second-btn-color:  #FFFFFF;
-    --accent-color:  #404BBF;
+    --accent-color:  #4D5AE5;
     --main-bcg-color: #F4F4FD;
     --second-bcg-color: #2E2F42;
 }
@@ -15,6 +15,8 @@
 /* body */
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF;
+    font-size: 16px;
 }
 
 .list{
@@ -23,7 +25,7 @@ body{
 .link{
     text-decoration: none;
 }
-.title{
+.section-title{
     font-size: 36px;
     line-height: 1.11;
     
@@ -31,16 +33,14 @@ body{
     text-transform: capitalize;
     color: var(--main-title-color);
 }
-.subtitle{
+.section-subtitle{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--main-title-color);    
 }
-.text{
-    font-weight: 400;
-    font-size: 16px;
+.section-text{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
@@ -59,19 +59,17 @@ body{
 }
 
 /* header */
-.header-item{
+.header-link{
 font-weight: 500;
-font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #2E2F42;
 }
-.header-item:hover, .header-item:focus{
+.header-link:hover, .header-link:focus{
     color: var(--accent-color);
 }
 .header-logo{
     font-family: 'Raleway', sans-serif;
-font-style: normal;
 font-weight: 800;
 font-size: 18px;
 line-height: 1.33;
@@ -79,22 +77,22 @@ display: flex;
 align-items: center;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-color: #2E2F42;
+color: var(--main-title-color);
 }
 .header-logo span{
     color: #4D5AE5;
 }
 
 .link-address{
-    font-family: inherit;
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
+    font-style: normal;
+}
+.contact-link, 
+.contact-tel{
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
 }
-.link-mail:hover, .link-mail:focus{
+.contact-link:hover, .contact-link:focus{
     color: var(--accent-color);
 }
 
@@ -111,6 +109,13 @@ color: var(--main-btn-color);
     background: var(--main-bcg-color);
 border: 1px solid #E7E9FC;
 border-radius: 4px;
+cursor: pointer;
+}
+.btn-items:hover, .btn-items:focus{
+    background: #4D5AE5;
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
+color: #FFFFFF;
 }
 /* section1 */
 .hero{
